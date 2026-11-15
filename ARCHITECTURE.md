@@ -15,7 +15,7 @@ This file is the binding contract between the build, core and UI work. Do not ch
 | Language / build | Kotlin 2.0.21, AGP 8.7.3, Gradle 8.11.1, JDK 17, compileSdk 35, targetSdk 35, minSdk 28 | minSdk 28 is the first API with `BluetoothHidDevice`. |
 | Module layout | Single Gradle module `app`, applicationId and namespace `app.curser` | Smallest thing that works. |
 
-Not in scope: text typing from the phone keyboard, media keys, on-screen mouse buttons, foreground service (trackpad only runs while the app is on screen), Wi-Fi transport, high-resolution wheel.
+Not in scope: typing through the phone's system keyboard (section 10 adds an in-app keyboard instead), media playback keys, on-screen mouse buttons, foreground service (trackpad only runs while the app is on screen), Wi-Fi transport, high-resolution wheel.
 
 Not possible over HID keyboard/mouse, so not built: Mac smart zoom, Mac rotate, two-finger "swipe between pages", Mac Notification Centre edge swipe (macOS has no default shortcut for any of them, or the gesture is indistinguishable from scrolling).
 
